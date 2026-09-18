@@ -1,0 +1,38 @@
+Clone or download the repository:
+
+Bash
+git clone [https://github.com/](https://github.com/)<YOUR_USERNAME>/printhub-tracker.git
+cd printhub-tracker
+Run the main CLI program:
+
+Bash
+python main.py
+Running Unit Tests
+Execute the unit tests using Python's standard test runner:
+
+Bash
+python -m unittest discover -s tests
+
+---
+
+### 📄 Step 3: `statement.md` Content
+
+```markdown
+# Problem Statement & Project Scope
+
+## Problem Statement
+Campus printing stalls and academic stationery logs often rely on loose paper notes or quick mental arithmetic during peak lab hours. This approach leads to common calculation mistakes, difficulties tracking non-standard custom items (like spiral binding or record sheets), and lost revenue history.
+
+## Scope of Project
+PrintHub CLI addresses these inefficiencies by providing a lightweight, object-oriented command-line solution that automates line-item multiplication, persists rate cards in JSON format, accepts custom items on runtime, and generates accurate itemized receipts.
+
+## Target Users
+- Campus printing operators
+- Lab instructors managing assignment printing tabs
+- Students tracking group project printing and binding costs
+
+## High-Level Features
+1. JSON-backed rate card lookup and rate modification.
+2. Defensive input handling preventing runtime exceptions from invalid string/negative inputs.
+3. Modular Python package structure separating UI from business logic.
+4. Terminal-formatted itemized receipts with piece counts and aggregate totals.
